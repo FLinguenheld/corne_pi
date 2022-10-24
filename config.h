@@ -5,26 +5,25 @@
 #pragma once
 
 /* Select hand configuration */
-#define MASTER_LEFT
-// #define MASTER_RIGHT
+// #define MASTER_LEFT
+#define MASTER_RIGHT
 
 
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 
-#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET // Activates the double-tap behavior
+// Flash
+#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET              // Activates the double-tap behavior
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 200U // Timeout window in ms in which the double tap can occur.
-// #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_LED GP17 // Specify a optional status led by GPIO number which blinks when entering the bootloader
-
-
-
 
 // --------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------
 
 // OLED
 #ifdef MASTER_LEFT
-    #define OLED_FONT_H "keyboards/crkbd/keymaps/corne_keymap/font/glcdfont_left.c"
+    #define OLED_FONT_H "keyboards/crkbd/keymaps/corne_pie/font/glcdfont_left.c"
 #else
-    #define OLED_FONT_H "keyboards/crkbd/keymaps/corne_keymap/font/glcdfont_right.c"
+    #define OLED_FONT_H "keyboards/crkbd/keymaps/corne_pie/font/glcdfont_right.c"
 #endif
 
 #define OLED_BRIGHTNESS 60 // Protect my eyesss
