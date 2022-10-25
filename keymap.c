@@ -51,15 +51,18 @@ enum custom_keys {
     CS_UDIAERESIS,
     CS_YDIAERESIS,
 
-    // Without, managed here
-    CS_EURO,
-    CS_POUND,
-
-    CS_DEGREE,
     CS_DIAMETER,
+
+    CS_SUPERSCRIPT_0,
     CS_SUPERSCRIPT_1,
     CS_SUPERSCRIPT_2,
     CS_SUPERSCRIPT_3,
+    CS_SUPERSCRIPT_4,
+    CS_SUPERSCRIPT_5,
+    CS_SUPERSCRIPT_6,
+    CS_SUPERSCRIPT_7,
+    CS_SUPERSCRIPT_8,
+    CS_SUPERSCRIPT_9,
 };
 
 // --
@@ -84,26 +87,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 unregister_code(KC_LCTL);
                 unregister_code(KC_LSFT);
             }
-            break;
-
-        case CS_EURO:
-            if (record->event.pressed) { send_unicode_string("€"); }
-            break;
-        case CS_POUND:
-            if (record->event.pressed) { send_unicode_string("£"); }
-            break;
-
-        case CS_DEGREE:
-            if (record->event.pressed) { send_unicode_string("°"); }
-            break;
-        case CS_SUPERSCRIPT_1:
-            if (record->event.pressed) { send_unicode_string("¹"); }
-            break;
-        case CS_SUPERSCRIPT_2:
-            if (record->event.pressed) { send_unicode_string("²"); }
-            break;
-        case CS_SUPERSCRIPT_3:
-            if (record->event.pressed) { send_unicode_string("³"); }
             break;
     }
 

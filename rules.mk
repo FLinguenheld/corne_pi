@@ -18,10 +18,9 @@ COMBO_ENABLE = yes
 # Recommended for space cadet shift
 COMMAND_ENABLE = no
 
+UNICODE_ENABLE = yes
 SEND_STRING_ENABLE = yes
 
-UNICODE_ENABLE = yes
-UNICODEMAP_ENABLE = no
 
 
 # Reduce the size !

@@ -74,9 +74,16 @@ enum combos {
     // --
     DEGREE,
     DIAMETER,
+    SUPERSCRIPT_0,
     SUPERSCRIPT_1,
     SUPERSCRIPT_2,
     SUPERSCRIPT_3,
+    SUPERSCRIPT_4,
+    SUPERSCRIPT_5,
+    SUPERSCRIPT_6,
+    SUPERSCRIPT_7,
+    SUPERSCRIPT_8,
+    SUPERSCRIPT_9,
 
     // --
     MAIL_SHORT,
@@ -154,9 +161,17 @@ const uint16_t PROGMEM combo_curly_bracket_right[] =    {KC_U, KC_X, COMBO_END};
 // --
 const uint16_t PROGMEM combo_degree[] =                 {KC_D, KC_G, KC_R, COMBO_END};
 const uint16_t PROGMEM combo_diameter[] =               {KC_D, KC_I, KC_A, COMBO_END};
+
+const uint16_t PROGMEM combo_superscript_0[] =          {KC_CIRC, KC_0, COMBO_END};
 const uint16_t PROGMEM combo_superscript_1[] =          {KC_CIRC, KC_1, COMBO_END};
 const uint16_t PROGMEM combo_superscript_2[] =          {KC_CIRC, KC_2, COMBO_END};
 const uint16_t PROGMEM combo_superscript_3[] =          {KC_CIRC, KC_3, COMBO_END};
+const uint16_t PROGMEM combo_superscript_4[] =          {KC_CIRC, KC_4, COMBO_END};
+const uint16_t PROGMEM combo_superscript_5[] =          {KC_CIRC, KC_5, COMBO_END};
+const uint16_t PROGMEM combo_superscript_6[] =          {KC_CIRC, KC_6, COMBO_END};
+const uint16_t PROGMEM combo_superscript_7[] =          {KC_CIRC, KC_7, COMBO_END};
+const uint16_t PROGMEM combo_superscript_8[] =          {KC_CIRC, KC_8, COMBO_END};
+const uint16_t PROGMEM combo_superscript_9[] =          {KC_CIRC, KC_9, COMBO_END};
 
 // With macros !
 const uint16_t PROGMEM combo_mail_short[] =             {KC_M, KC_S, COMBO_END};
@@ -219,8 +234,8 @@ combo_t key_combos[] = {
 
     // --
     [DOLLAR] = COMBO(combo_dollar,                          KC_DLR),
-    [EURO] = COMBO(combo_euro,                              CS_EURO),
-    [POUND] = COMBO(combo_pound,                            CS_POUND),
+    [EURO] = COMBO(combo_euro,                              UC(0x20AC)), // €
+    [POUND] = COMBO(combo_pound,                            UC(0x00A3)), // £
 
     // --
     [PARENTHESIS_LEFT] = COMBO(combo_parenthesis_left,          KC_LEFT_PAREN),
@@ -231,11 +246,20 @@ combo_t key_combos[] = {
     [CURLY_BRACKET_RIGHT] = COMBO(combo_curly_bracket_right,    KC_RIGHT_CURLY_BRACE),
 
     // --
-    [DEGREE] = COMBO(combo_degree,                          CS_DEGREE),
-    [DIAMETER] = COMBO(combo_diameter,                      CS_DIAMETER),
-    [SUPERSCRIPT_1] = COMBO(combo_superscript_1,            CS_SUPERSCRIPT_1),
-    [SUPERSCRIPT_2] = COMBO(combo_superscript_2,            CS_SUPERSCRIPT_2),
-    [SUPERSCRIPT_3] = COMBO(combo_superscript_3,            CS_SUPERSCRIPT_3),
+    [DEGREE] = COMBO(combo_degree,                          UC(0x00B0)), // °
+    [DIAMETER] = COMBO(combo_diameter,                      CS_DIAMETER), // ø Ø
+
+    // --
+    [SUPERSCRIPT_0] = COMBO(combo_superscript_0,            CS_SUPERSCRIPT_0), // ⁰ ₀
+    [SUPERSCRIPT_1] = COMBO(combo_superscript_1,            CS_SUPERSCRIPT_1), // ¹ ₁
+    [SUPERSCRIPT_2] = COMBO(combo_superscript_2,            CS_SUPERSCRIPT_2), // ² ₂
+    [SUPERSCRIPT_3] = COMBO(combo_superscript_3,            CS_SUPERSCRIPT_3), // ³ ₃
+    [SUPERSCRIPT_4] = COMBO(combo_superscript_4,            CS_SUPERSCRIPT_4), // ⁴ ₄
+    [SUPERSCRIPT_5] = COMBO(combo_superscript_5,            CS_SUPERSCRIPT_5), // ⁵ ₅
+    [SUPERSCRIPT_6] = COMBO(combo_superscript_6,            CS_SUPERSCRIPT_6), // ⁶ ₆
+    [SUPERSCRIPT_7] = COMBO(combo_superscript_7,            CS_SUPERSCRIPT_7), // ⁷ ₇
+    [SUPERSCRIPT_8] = COMBO(combo_superscript_8,            CS_SUPERSCRIPT_8), // ⁸ ₈
+    [SUPERSCRIPT_9] = COMBO(combo_superscript_9,            CS_SUPERSCRIPT_9), // ⁹ ₉
 
     // --
     [MAIL_SHORT] = COMBO_ACTION(combo_mail_short),
