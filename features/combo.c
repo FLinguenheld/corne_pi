@@ -101,7 +101,7 @@ const uint16_t PROGMEM combo_enter_shifted[] =          {LT(_NUMERIC, KC_ENT), K
 const uint16_t PROGMEM combo_control_shift[] =          {KC_LCPO, KC_S, COMBO_END};
 const uint16_t PROGMEM combo_control_alt[] =            {KC_LCPO, KC_LALT, COMBO_END};
 const uint16_t PROGMEM combo_control_shift_alt[] =      {KC_LCPO, KC_S, KC_A, COMBO_END};
-const uint16_t PROGMEM combo_right_alt[] =              {KC_LALT, KC_G, COMBO_END};
+const uint16_t PROGMEM combo_right_alt[] =              {KC_LAPO, KC_G, COMBO_END};
 const uint16_t PROGMEM combo_alt_shift[] =              {KC_LALT, KC_S, COMBO_END};
 
 // --

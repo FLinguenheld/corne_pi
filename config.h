@@ -5,8 +5,8 @@
 #pragma once
 
 /* Select hand configuration */
-// #define MASTER_LEFT
-#define MASTER_RIGHT
+#define MASTER_LEFT
+// #define MASTER_RIGHT
 
 
 // --------------------------------------------------------------------------------
@@ -20,11 +20,7 @@
 // --------------------------------------------------------------------------------
 
 // OLED
-#ifdef MASTER_LEFT
-    #define OLED_FONT_H "keyboards/crkbd/keymaps/corne_pie/font/glcdfont_left.c"
-#else
-    #define OLED_FONT_H "keyboards/crkbd/keymaps/corne_pie/font/glcdfont_right.c"
-#endif
+#define OLED_FONT_H "keyboards/crkbd/keymaps/corne_pie/font/glcdfont.c"
 
 #define OLED_BRIGHTNESS 60 // Protect my eyesss
 #define SPLIT_LAYER_STATE_ENABLE
