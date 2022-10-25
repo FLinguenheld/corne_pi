@@ -50,31 +50,40 @@
 // #define NO_ACTION_ONESHOT
 
 // Mouse
-#define MK_3_SPEED
-#define MK_MOMENTARY_ACCEL
-// #define MK_COMBINED
-
-#define MK_C_OFFSET_0 1
-#define MK_C_INTERVAL_0 12
-
-#define MK_C_OFFSET_1 4
-#define MK_C_INTERVAL_1 18
-
-#define MK_C_OFFSET_UNMOD 13
-#define MK_C_INTERVAL_UNMOD 15
-
-#define MK_C_OFFSET_2 25
-#define MK_C_INTERVAL_2 10
+#define MK_KINETIC_SPEED
+#define MK_COMBINE
 
 
-#define MK_W_OFFSET_0 1
-#define MK_W_INTERVAL_0 160
 
-#define MK_W_OFFSET_1 2
-#define MK_W_INTERVAL_1 120
 
-#define MK_W_OFFSET_UNMOD 4
-#define MK_W_INTERVAL_UNMOD 70
 
-#define MK_W_OFFSET_2 10
-#define MK_W_INTERVAL_2 30
+
+
+
+// #define MK_3_SPEED
+// #define MK_MOMENTARY_ACCEL
+
+// #define MK_C_OFFSET_0 1
+// #define MK_C_INTERVAL_0 12
+
+// #define MK_C_OFFSET_1 4
+// #define MK_C_INTERVAL_1 18
+
+// #define MK_C_OFFSET_UNMOD 13
+// #define MK_C_INTERVAL_UNMOD 15
+
+// #define MK_C_OFFSET_2 25
+// #define MK_C_INTERVAL_2 10
+
+
+// #define MK_W_OFFSET_0 1
+// #define MK_W_INTERVAL_0 160
+
+// #define MK_W_OFFSET_1 2
+// #define MK_W_INTERVAL_1 120
+
+// #define MK_W_OFFSET_UNMOD 4
+// #define MK_W_INTERVAL_UNMOD 70
+
+// #define MK_W_OFFSET_2 10
+// #define MK_W_INTERVAL_2 30
