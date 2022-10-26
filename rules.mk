@@ -1,6 +1,6 @@
 # Recommended by the doc to improve compilation :
 LTO_ENABLE      = yes
-# SPLIT_KEYBOARD = yes
+SPLIT_KEYBOARD = yes
 
 
 BOOTLOADER = rp2040
@@ -21,6 +21,7 @@ COMMAND_ENABLE = no
 UNICODE_ENABLE = yes
 SEND_STRING_ENABLE = yes
 
+LEADER_ENABLE = yes
 
 
 # Reduce the size !
@@ -29,7 +30,7 @@ SEND_STRING_ENABLE = yes
 # BACKLIGHT_ENABLE = no
 # BLUETOOTH_ENABLE = no
 # BOOTMAGIC_ENABLE = no
-# CONSOLE_ENABLE = no
+CONSOLE_ENABLE = no
 # EXTRAKEY_ENABLE = yes
 # FAUXCLICKY_ENABLE = no
 # HD44780_ENABLE = no

@@ -76,8 +76,6 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
         case CS_UDIAERESIS:
         case CS_YDIAERESIS:
 
-        case CS_DIAMETER:
-
         case CS_SUPERSCRIPT_0:
         case CS_SUPERSCRIPT_1:
         case CS_SUPERSCRIPT_2:
@@ -160,11 +158,6 @@ void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
         case CS_YDIAERESIS:
             if (shifted) { send_unicode_string("Ÿ"); }
             else         { send_unicode_string("ÿ"); }  break;
-
-
-        case CS_DIAMETER:
-            if (shifted) { send_unicode_string("Ø"); }
-            else         { send_unicode_string("ø"); }  break;
 
 
         case CS_SUPERSCRIPT_0:

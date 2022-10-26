@@ -11,6 +11,7 @@
 //      - And add the macro in the process_combo_event() function
 
 enum combos {
+    LEADER,
 
     LAYER_ADJUST,
     LAYER_FN,
@@ -72,8 +73,6 @@ enum combos {
     CURLY_BRACKET_RIGHT,
 
     // --
-    DEGREE,
-    DIAMETER,
     SUPERSCRIPT_0,
     SUPERSCRIPT_1,
     SUPERSCRIPT_2,
@@ -97,6 +96,7 @@ uint16_t COMBO_LEN = COMBO_LENGTH;
 // --------------------------------------------------
 // --------------------------------------------------
 // Sequences fo keys
+const uint16_t PROGMEM combo_leader[] =                 {KC_SCLN, KC_COLN, COMBO_END};
 
 const uint16_t PROGMEM combo_adjust[] =                 {LT(_MOUSE, KC_COMM), LT(_ARROWS, KC_DOT), COMBO_END};
 const uint16_t PROGMEM combo_fn[] =                     {LT(_NUMERIC, KC_ENT), KC_F, COMBO_END};
@@ -159,9 +159,6 @@ const uint16_t PROGMEM combo_curly_bracket_left[] =     {KC_Y, KC_I, COMBO_END};
 const uint16_t PROGMEM combo_curly_bracket_right[] =    {KC_U, KC_X, COMBO_END};
 
 // --
-const uint16_t PROGMEM combo_degree[] =                 {KC_D, KC_G, KC_R, COMBO_END};
-const uint16_t PROGMEM combo_diameter[] =               {KC_D, KC_I, KC_A, COMBO_END};
-
 const uint16_t PROGMEM combo_superscript_0[] =          {KC_CIRC, KC_0, COMBO_END};
 const uint16_t PROGMEM combo_superscript_1[] =          {KC_CIRC, KC_1, COMBO_END};
 const uint16_t PROGMEM combo_superscript_2[] =          {KC_CIRC, KC_2, COMBO_END};
@@ -182,6 +179,7 @@ const uint16_t PROGMEM combo_mail_long[] =              {KC_M, KC_L, COMBO_END};
 // --------------------------------------------------
 // Sequences fo keys
 combo_t key_combos[] = {
+    [LEADER] = COMBO(combo_leader,                          KC_LEAD),
 
     [LAYER_ADJUST] = COMBO(combo_adjust,                    OSL(_ADJUST)),
     [LAYER_FN] = COMBO(combo_fn,                            OSL(_FN)),
@@ -244,10 +242,6 @@ combo_t key_combos[] = {
     [BRACKET_RIGHT] = COMBO(combo_bracket_right,                KC_RIGHT_BRACKET),
     [CURLY_BRACKET_LEFT] = COMBO(combo_curly_bracket_left,      KC_LEFT_CURLY_BRACE),
     [CURLY_BRACKET_RIGHT] = COMBO(combo_curly_bracket_right,    KC_RIGHT_CURLY_BRACE),
-
-    // --
-    [DEGREE] = COMBO(combo_degree,                          UC(0x00B0)), // °
-    [DIAMETER] = COMBO(combo_diameter,                      CS_DIAMETER), // ø Ø
 
     // --
     [SUPERSCRIPT_0] = COMBO(combo_superscript_0,            CS_SUPERSCRIPT_0), // ⁰ ₀

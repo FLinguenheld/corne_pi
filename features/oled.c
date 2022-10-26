@@ -10,40 +10,38 @@ void oled_display(void) {
 
     oled_clear(); // prevents the timeout, I used oled_write_ln to fill lines with spaces
 
-        // Logo
-        switch (get_highest_layer(layer_state)) {
+    // Layers
+    switch (get_highest_layer(layer_state)) {
 
-            case _BASE:
-                oled_write_raw_P(qmk_logo, sizeof(qmk_logo));
-                break;
-        }
+        case _BASE:
+            oled_write_raw_P(qmk_logo, sizeof(qmk_logo));
+            break;
 
-    // Layer name
-    if (get_highest_layer(layer_state) != _BASE){
+        case _NUMERIC:
+            oled_write_raw_P(qmk_numeric, sizeof(qmk_numeric));
+            break;
 
-        // Current layer
-        switch (get_highest_layer(layer_state)) {
+        case _MOUSE:
+            oled_write_raw_P(qmk_mouse, sizeof(qmk_mouse));
+            break;
 
-            case _NUMERIC:
-                oled_write_raw_P(qmk_numeric, sizeof(qmk_numeric));
-                break;
+        case _ARROWS:
+            oled_write_raw_P(qmk_arrows, sizeof(qmk_arrows));
+            break;
 
-            case _MOUSE:
-                oled_write_raw_P(qmk_mouse, sizeof(qmk_mouse));
-                break;
+        case _ADJUST:
+            oled_write_raw_P(qmk_adjust, sizeof(qmk_adjust));
+            break;
 
-            case _ARROWS:
-                oled_write_raw_P(qmk_arrows, sizeof(qmk_arrows));
-                break;
+        case _FN:
+            oled_write_raw_P(qmk_fn, sizeof(qmk_fn));
+            break;
+    }
 
-            case _ADJUST:
-                oled_write_raw_P(qmk_adjust, sizeof(qmk_adjust));
-                break;
+    // Leader --
+    if (is_leader_active) {
 
-            case _FN:
-                oled_write_raw_P(qmk_fn, sizeof(qmk_fn));
-                break;
-        }
+        oled_write_raw_P(qmk_leader, sizeof(qmk_leader));
     }
 
     // Modifier keys --
