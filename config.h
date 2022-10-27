@@ -48,15 +48,11 @@
 
 // leader
 #define LEADER_PER_KEY_TIMING
-#define LEADER_TIMEOUT 250
+#define LEADER_TIMEOUT 280
 #define LEADER_NO_TIMEOUT
 
 
 // Mouse
-// #define MK_KINETIC_SPEED
-// #define MK_COMBINE
-
-
 #define MK_3_SPEED
 #define MK_MOMENTARY_ACCEL
 

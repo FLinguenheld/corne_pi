@@ -46,14 +46,14 @@ Use the standard us keymap :
 |   é + i          |   ç                    |
 |   é + a          |   æ                    |
 |   é + o          |   œ                    |
-|   enter + a      |   à                    |
-|   enter + é      |   è                    |
-|   enter + u      |   ù                    |
+|   space + a      |   à                    |
+|   space + e      |   è                    |
+|   space + u      |   ù                    |
 |   comma + a      |   â                    |
-|   comma + é      |   ê                    |
+|   comma + e      |   ê                    |
 |   comma + i      |   î                    |
 |   comma + o      |   ô                    |
-|   scolon + é     |   ë                    |
+|   scolon + e     |   ë                    |
 |   scolon + i     |   ï                    |
 |   scolon + u     |   ü                    |
 |   scolon + y     |   ÿ                    |
@@ -78,8 +78,6 @@ Use the standard us keymap :
 |   s + t          |   *                    |
 |   enter + s      |   shifted enter        |
 |   d + l          |   $                    |
-|   e + r          |   €                    |
-|   p + d          |   £                    |
 
 |   Parenthesis    |                        |
 |------------------|------------------------|
@@ -89,14 +87,6 @@ Use the standard us keymap :
 |   i + w          |   ]                    |
 |   y + i          |   {                    |
 |   u + x          |   }                    |
-
-|     Special      |                        |
-|------------------|------------------------|
-|   d + g + r      |   °                    |
-|   d + i + a      |   ø   Ø                |
-|   ^ + 1          |   ¹                    |
-|   ^ + 2          |   ²                    |
-|   ^ + 3          |   ³                    |
 
 
 #### Layouts
