@@ -23,6 +23,7 @@ SEND_STRING_ENABLE = yes
 
 LEADER_ENABLE = yes
 
+COMMAND_ENABLE = yes
 
 # Reduce the size !
 # Extra keys allow to save 324 bytes

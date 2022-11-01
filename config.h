@@ -41,7 +41,7 @@
 // See space cadet shift
 #define LCPO_KEYS KC_LCTL, KC_TRNS, KC_SPC
 #define RSPC_KEYS KC_RSFT, KC_RSFT, KC_QUOTE
-#define LAPO_KEYS KC_LALT, KC_LSFT, KC_2
+#define LAPO_KEYS KC_LALT, KC_RSFT, KC_2
 
 // Unicode
 #define UNICODE_SELECTED_MODES UC_LNX

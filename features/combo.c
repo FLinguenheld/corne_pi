@@ -12,6 +12,7 @@
 
 enum combos {
     LEADER,
+    BOOTLOADER,
 
     LAYER_ADJUST,
     LAYER_FN,
@@ -61,6 +62,7 @@ enum combos {
     TIRET,              // Sorry Elis but it's better than dash
     UNDERSCORE,
     DOLLAR,
+    AT_SIGN,
 
     PARENTHESIS_LEFT,
     PARENTHESIS_RIGHT,
@@ -79,6 +81,7 @@ uint16_t COMBO_LEN = COMBO_LENGTH;
 // --------------------------------------------------
 // Sequences fo keys
 const uint16_t PROGMEM combo_leader[] =                 {KC_SCLN, KC_COLN, COMBO_END};
+const uint16_t PROGMEM combo_bootloader[] =             {KC_Z, KC_EXLM, KC_LABK, KC_K, KC_C, KC_RABK, COMBO_END};
 
 const uint16_t PROGMEM combo_adjust[] =                 {LT(_MOUSE, KC_COMM), LT(_ARROWS, KC_DOT), COMBO_END};
 const uint16_t PROGMEM combo_fn[] =                     {LT(_NUMERIC, KC_ENT), KC_F, COMBO_END};
@@ -114,7 +117,7 @@ const uint16_t PROGMEM combo_y_diaeresis[] =            {KC_SCLN, KC_Y, COMBO_EN
 // --
 const uint16_t PROGMEM combo_ampersand[] =              {KC_A, KC_E, COMBO_END};
 const uint16_t PROGMEM combo_backslash[] =              {KC_D, KC_R, COMBO_END};
-const uint16_t PROGMEM combo_circumflex[] =             {KC_C, KC_R, COMBO_END};
+const uint16_t PROGMEM combo_circumflex[] =             {KC_S, KC_Q, COMBO_END}; // Keep ?
 const uint16_t PROGMEM combo_equal[] =                  {KC_E, KC_U, COMBO_END};
 const uint16_t PROGMEM combo_grave[] =                  {KC_G, KC_R, COMBO_END};
 const uint16_t PROGMEM combo_hash[] =                   {KC_H, KC_S, COMBO_END};
@@ -127,6 +130,7 @@ const uint16_t PROGMEM combo_tilde[] =                  {KC_T, KC_D, COMBO_END};
 const uint16_t PROGMEM combo_tiret[] =                  {KC_T, KC_R, COMBO_END};
 const uint16_t PROGMEM combo_underscore[] =             {KC_S, KC_R, COMBO_END};
 const uint16_t PROGMEM combo_dollar[] =                 {KC_D, KC_L, COMBO_END};
+const uint16_t PROGMEM combo_at_sign[] =                {KC_A, KC_I, COMBO_END};
 
 // --
 const uint16_t PROGMEM combo_parenthesis_left[] =       {KC_Y, KC_E, COMBO_END};
@@ -142,6 +146,7 @@ const uint16_t PROGMEM combo_curly_bracket_right[] =    {KC_U, KC_X, COMBO_END};
 // Sequences fo keys
 combo_t key_combos[] = {
     [LEADER] = COMBO(combo_leader,                          KC_LEAD),
+    [BOOTLOADER] = COMBO(combo_bootloader,                  QK_BOOTLOADER),
 
     [LAYER_ADJUST] = COMBO(combo_adjust,                    OSL(_ADJUST)),
     [LAYER_FN] = COMBO(combo_fn,                            OSL(_FN)),
@@ -192,6 +197,7 @@ combo_t key_combos[] = {
     [TIRET] = COMBO(combo_tiret,                            KC_MINS),
     [UNDERSCORE] = COMBO(combo_underscore,                  KC_UNDS),
     [DOLLAR] = COMBO(combo_dollar,                          KC_DLR),
+    [AT_SIGN] = COMBO(combo_at_sign,                        KC_AT),
 
     // --
     [PARENTHESIS_LEFT] = COMBO(combo_parenthesis_left,          KC_LEFT_PAREN),

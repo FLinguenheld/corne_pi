@@ -62,7 +62,7 @@ Use the standard us keymap :
 |------------------|------------------------|
 |   mouse + arrows |   adjust               |
 |   arrows + f     |   fn                   |
-|   c + r          |   ^                    |
+|   q + s          |   ^                    |
 |   g + r          |   \`                   |
 |   h + s          |   #                    |
 |   a + e          |   &                    |
@@ -78,6 +78,7 @@ Use the standard us keymap :
 |   s + t          |   *                    |
 |   enter + s      |   shifted enter        |
 |   d + l          |   $                    |
+|   a + i          |   @                    |
 
 |   Parenthesis    |                        |
 |------------------|------------------------|
