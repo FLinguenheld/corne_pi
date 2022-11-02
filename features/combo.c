@@ -117,7 +117,7 @@ const uint16_t PROGMEM combo_y_diaeresis[] =            {KC_SCLN, KC_Y, COMBO_EN
 // --
 const uint16_t PROGMEM combo_ampersand[] =              {KC_A, KC_E, COMBO_END};
 const uint16_t PROGMEM combo_backslash[] =              {KC_D, KC_R, COMBO_END};
-const uint16_t PROGMEM combo_circumflex[] =             {KC_S, KC_Q, COMBO_END}; // Keep ?
+const uint16_t PROGMEM combo_circumflex[] =             {KC_V, KC_D, COMBO_END}; // Keep ?
 const uint16_t PROGMEM combo_equal[] =                  {KC_E, KC_U, COMBO_END};
 const uint16_t PROGMEM combo_grave[] =                  {KC_G, KC_R, COMBO_END};
 const uint16_t PROGMEM combo_hash[] =                   {KC_H, KC_S, COMBO_END};

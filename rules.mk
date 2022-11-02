@@ -23,7 +23,10 @@ SEND_STRING_ENABLE = yes
 
 LEADER_ENABLE = yes
 
-COMMAND_ENABLE = yes
+# COMMAND_ENABLE = yes	# Active commands 
+
+RGBLIGHT_ENABLE = yes    # Enable WS2812 RGB underlight.
+
 
 # Reduce the size !
 # Extra keys allow to save 324 bytes
@@ -31,7 +34,7 @@ COMMAND_ENABLE = yes
 # BACKLIGHT_ENABLE = no
 # BLUETOOTH_ENABLE = no
 # BOOTMAGIC_ENABLE = no
-CONSOLE_ENABLE = no
+# CONSOLE_ENABLE = no
 # EXTRAKEY_ENABLE = yes
 # FAUXCLICKY_ENABLE = no
 # HD44780_ENABLE = no
