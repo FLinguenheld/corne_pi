@@ -48,13 +48,18 @@ Use the standard us keymap :
 |   é + o          |   œ                    |
 |   space + a      |   à                    |
 |   space + e      |   è                    |
+|   space + i      |   ì                    |
+|   space + o      |   ò                    |
 |   space + u      |   ù                    |
 |   comma + a      |   â                    |
 |   comma + e      |   ê                    |
 |   comma + i      |   î                    |
 |   comma + o      |   ô                    |
+|   comma + u      |   û                    |
+|   scolon + a     |   ä                    |
 |   scolon + e     |   ë                    |
 |   scolon + i     |   ï                    |
+|   scolon + o     |   ö                    |
 |   scolon + u     |   ü                    |
 |   scolon + y     |   ÿ                    |
 
@@ -88,6 +93,27 @@ Use the standard us keymap :
 |   i + w          |   ]                    |
 |   y + i          |   {                    |
 |   u + x          |   }                    |
+
+#### Leader
+
+|   -                         |                        |
+|-----------------------------|------------------------|
+|   leader + M + S            |   mail short           |
+|   leader + M + L            |   mail long            |
+|   leader + D + E + G        |   °                    |
+|   leader + C + O + P        |   ©                    |
+|   leader + R + E + G        |   ®                    |
+|   leader + D + I + A        |   ø                    |
+|   leader + D + I + A + M    |   Ø                    |
+|   leader + E + U + R        |   €                    |
+|   leader + P + O + U        |   £                    |
+|   leader + Y + E + N        |   ¥                    |
+|   leader + P + I            |   π                    |
+|   leader + P + I + I        |   Π                    |
+|   leader + O + M + E        |   ω                    |
+|   leader + O + M + E + G    |   Ω                    |
+|   leader + S + U + P + C    |   ⁰   (too complicated)|
+|   leader + S + U + B + C    |   ₀                    |
 
 
 #### Layouts

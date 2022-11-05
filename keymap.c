@@ -37,23 +37,30 @@ enum custom_keys {
     UNICODE = SAFE_RANGE, // Shortcut to write a unicode, see numeric layer
 
     // With auto-shift
-    CS_EACUTE,
-    CS_AGRAVE,
-    CS_EGRAVE,
-    CS_UGRAVE,
-    CS_CCEDILLA,
+    CS_E_ACUTE,
+
+    CS_A_GRAVE,
+    CS_E_GRAVE,
+    CS_I_GRAVE,
+    CS_O_GRAVE,
+    CS_U_GRAVE,
+
+    CS_C_CEDILLA,
     CS_AE,
     CS_OE,
 
-    CS_ACIRCUMFLEX,
-    CS_ECIRCUMFLEX,
-    CS_ICIRCUMFLEX,
-    CS_OCIRCUMFLEX,
-    CS_UCIRCUMFLEX,
-    CS_EDIAERESIS,
-    CS_IDIAERESIS,
-    CS_UDIAERESIS,
-    CS_YDIAERESIS,
+    CS_A_CIRCUMFLEX,
+    CS_E_CIRCUMFLEX,
+    CS_I_CIRCUMFLEX,
+    CS_O_CIRCUMFLEX,
+    CS_U_CIRCUMFLEX,
+
+    CS_A_DIAERESIS,
+    CS_E_DIAERESIS,
+    CS_I_DIAERESIS,
+    CS_O_DIAERESIS,
+    CS_U_DIAERESIS,
+    CS_Y_DIAERESIS,
 
     CS_SUPERSCRIPT_0,
     CS_SUPERSCRIPT_1,
@@ -125,7 +132,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_BASE] = LAYOUT_split_3x6_3(
   //|-----------------------+----------------+----------------+----------------+----------------+-----------------------|       |-----------------------+----------------+----------------+----------------+----------------+-----------------------|
-      KC_TAB                ,     KC_J       ,   CS_EACUTE    ,     KC_P       ,     KC_O       ,        KC_Z           ,                 KC_K          ,      KC_V      ,      KC_D      ,      KC_L      ,      KC_M      ,       KC_BSPC         ,
+      KC_TAB                ,     KC_J       ,   CS_E_ACUTE    ,     KC_P       ,     KC_O       ,        KC_Z           ,                 KC_K          ,      KC_V      ,      KC_D      ,      KC_L      ,      KC_M      ,       KC_BSPC         ,
   //|-----------------------+----------------+----------------+----------------+----------------+-----------------------|       |-----------------------+----------------+----------------+----------------+----------------+-----------------------|
       GUI_T(KC_ESC)         ,     KC_A       ,     KC_U       ,     KC_I       ,     KC_E       ,       KC_EXLM         ,                 KC_C          ,      KC_T      ,      KC_S      ,      KC_R      ,      KC_N      ,       KC_QUOTE        ,
   //|-----------------------+----------------+----------------+----------------+----------------+-----------------------|       |-----------------------+----------------+----------------+----------------+----------------+-----------------------|

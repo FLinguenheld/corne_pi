@@ -21,21 +21,26 @@ enum combos {
     // French
     A_GRAVE,
     E_GRAVE,
+    I_GRAVE,
+    O_GRAVE,
     U_GRAVE,
-
-    C_CEDILLA,
-    E_A,
-    E_O,
 
     A_CIRCUMFLEX,
     E_CIRCUMFLEX,
     I_CIRCUMFLEX,
     O_CIRCUMFLEX,
     U_CIRCUMFLEX,
+
+    A_DIAERESIS,
     E_DIAERESIS,
     I_DIAERESIS,
+    O_DIAERESIS,
     U_DIAERESIS,
     Y_DIAERESIS,
+
+    C_CEDILLA,
+    E_A,
+    E_O,
 
     // --
     ENTER_SHIFTED,
@@ -98,21 +103,27 @@ const uint16_t PROGMEM combo_alt_shift[] =              {KC_LALT, KC_S, COMBO_EN
 // --
 const uint16_t PROGMEM combo_a_grave[] =                {KC_LCPO, KC_A, COMBO_END};
 const uint16_t PROGMEM combo_e_grave[] =                {KC_LCPO, KC_E, COMBO_END};
+const uint16_t PROGMEM combo_i_grave[] =                {KC_LCPO, KC_I, COMBO_END};
+const uint16_t PROGMEM combo_o_grave[] =                {KC_LCPO, KC_O, COMBO_END};
 const uint16_t PROGMEM combo_u_grave[] =                {KC_LCPO, KC_U, COMBO_END};
-
-const uint16_t PROGMEM combo_c_cedilla[] =              {CS_EACUTE, KC_I, COMBO_END};
-const uint16_t PROGMEM combo_ea[] =                     {CS_EACUTE, KC_A, COMBO_END};
-const uint16_t PROGMEM combo_eo[] =                     {CS_EACUTE, KC_O, COMBO_END};
 
 const uint16_t PROGMEM combo_a_circumflex[] =           {LT(_MOUSE, KC_COMM), KC_A, COMBO_END};
 const uint16_t PROGMEM combo_e_circumflex[] =           {LT(_MOUSE, KC_COMM), KC_E, COMBO_END};
 const uint16_t PROGMEM combo_i_circumflex[] =           {LT(_MOUSE, KC_COMM), KC_I, COMBO_END};
 const uint16_t PROGMEM combo_o_circumflex[] =           {LT(_MOUSE, KC_COMM), KC_O, COMBO_END};
 const uint16_t PROGMEM combo_u_circumflex[] =           {LT(_MOUSE, KC_COMM), KC_U, COMBO_END};
+
+const uint16_t PROGMEM combo_a_diaeresis[] =            {KC_SCLN, KC_A, COMBO_END};
 const uint16_t PROGMEM combo_e_diaeresis[] =            {KC_SCLN, KC_E, COMBO_END};
 const uint16_t PROGMEM combo_i_diaeresis[] =            {KC_SCLN, KC_I, COMBO_END};
+const uint16_t PROGMEM combo_o_diaeresis[] =            {KC_SCLN, KC_O, COMBO_END};
 const uint16_t PROGMEM combo_u_diaeresis[] =            {KC_SCLN, KC_U, COMBO_END};
 const uint16_t PROGMEM combo_y_diaeresis[] =            {KC_SCLN, KC_Y, COMBO_END};
+
+const uint16_t PROGMEM combo_c_cedilla[] =              {CS_E_ACUTE, KC_I, COMBO_END};
+const uint16_t PROGMEM combo_ea[] =                     {CS_E_ACUTE, KC_A, COMBO_END};
+const uint16_t PROGMEM combo_eo[] =                     {CS_E_ACUTE, KC_O, COMBO_END};
+
 
 // --
 const uint16_t PROGMEM combo_ampersand[] =              {KC_A, KC_E, COMBO_END};
@@ -161,24 +172,28 @@ combo_t key_combos[] = {
     [ALT_SHIFT] = COMBO(combo_alt_shift,                    A(S(XXXXXXX))),
 
     // French
-    [A_GRAVE] = COMBO(combo_a_grave,                        CS_AGRAVE),
-    [E_GRAVE] = COMBO(combo_e_grave,                        CS_EGRAVE),
-    [U_GRAVE] = COMBO(combo_u_grave,                        CS_UGRAVE),
+    [A_GRAVE] = COMBO(combo_a_grave,                        CS_A_GRAVE),
+    [E_GRAVE] = COMBO(combo_e_grave,                        CS_E_GRAVE),
+    [I_GRAVE] = COMBO(combo_i_grave,                        CS_I_GRAVE),
+    [O_GRAVE] = COMBO(combo_o_grave,                        CS_O_GRAVE),
+    [U_GRAVE] = COMBO(combo_u_grave,                        CS_U_GRAVE),
 
-    [C_CEDILLA] = COMBO(combo_c_cedilla,                    CS_CCEDILLA),
+    [A_CIRCUMFLEX] = COMBO(combo_a_circumflex,              CS_A_CIRCUMFLEX),
+    [E_CIRCUMFLEX] = COMBO(combo_e_circumflex,              CS_E_CIRCUMFLEX),
+    [I_CIRCUMFLEX] = COMBO(combo_i_circumflex,              CS_I_CIRCUMFLEX),
+    [O_CIRCUMFLEX] = COMBO(combo_o_circumflex,              CS_O_CIRCUMFLEX),
+    [U_CIRCUMFLEX] = COMBO(combo_u_circumflex,              CS_U_CIRCUMFLEX),
+
+    [A_DIAERESIS] = COMBO(combo_a_diaeresis,                CS_A_DIAERESIS),
+    [E_DIAERESIS] = COMBO(combo_e_diaeresis,                CS_E_DIAERESIS),
+    [I_DIAERESIS] = COMBO(combo_i_diaeresis,                CS_I_DIAERESIS),
+    [O_DIAERESIS] = COMBO(combo_o_diaeresis,                CS_O_DIAERESIS),
+    [U_DIAERESIS] = COMBO(combo_u_diaeresis,                CS_U_DIAERESIS),
+    [Y_DIAERESIS] = COMBO(combo_y_diaeresis,                CS_Y_DIAERESIS),
+
+    [C_CEDILLA] = COMBO(combo_c_cedilla,                    CS_C_CEDILLA),
     [E_A] = COMBO(combo_ea,                                 CS_AE),
     [E_O] = COMBO(combo_eo,                                 CS_OE),
-
-    [A_CIRCUMFLEX] = COMBO(combo_a_circumflex,              CS_ACIRCUMFLEX),
-    [E_CIRCUMFLEX] = COMBO(combo_e_circumflex,              CS_ECIRCUMFLEX),
-    [I_CIRCUMFLEX] = COMBO(combo_i_circumflex,              CS_ICIRCUMFLEX),
-    [O_CIRCUMFLEX] = COMBO(combo_o_circumflex,              CS_OCIRCUMFLEX),
-    [U_CIRCUMFLEX] = COMBO(combo_u_circumflex,              CS_UCIRCUMFLEX),
-
-    [E_DIAERESIS] = COMBO(combo_e_diaeresis,                CS_EDIAERESIS),
-    [I_DIAERESIS] = COMBO(combo_i_diaeresis,                CS_IDIAERESIS),
-    [U_DIAERESIS] = COMBO(combo_u_diaeresis,                CS_UDIAERESIS),
-    [Y_DIAERESIS] = COMBO(combo_y_diaeresis,                CS_YDIAERESIS),
 
     // --
     [AMPERSAND] = COMBO(combo_ampersand,                    KC_AMPR),
