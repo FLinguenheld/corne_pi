@@ -64,7 +64,7 @@ enum combos {
     SLASH,
     STAR,
     TILDE,
-    TIRET,              // Sorry Elis but it's better than dash
+    TIRET,              // Sorry Eliz but it's better than dash
     UNDERSCORE,
     DOLLAR,
     AT_SIGN,
@@ -75,6 +75,12 @@ enum combos {
     BRACKET_RIGHT,
     CURLY_BRACKET_LEFT,
     CURLY_BRACKET_RIGHT,
+
+    // One hand special
+    CONTROL_RIGHT,
+    CONTROL_SHIFT_RIGHT,
+    SHIFT_LEFT,
+    DEL_LEFT,
 
     // --
     COMBO_LENGTH, // Just to replace the define in config.h
@@ -124,7 +130,6 @@ const uint16_t PROGMEM combo_c_cedilla[] =              {CS_E_ACUTE, KC_I, COMBO
 const uint16_t PROGMEM combo_ea[] =                     {CS_E_ACUTE, KC_A, COMBO_END};
 const uint16_t PROGMEM combo_eo[] =                     {CS_E_ACUTE, KC_O, COMBO_END};
 
-
 // --
 const uint16_t PROGMEM combo_ampersand[] =              {KC_A, KC_E, COMBO_END};
 const uint16_t PROGMEM combo_backslash[] =              {KC_D, KC_R, COMBO_END};
@@ -150,6 +155,12 @@ const uint16_t PROGMEM combo_bracket_left[] =           {KC_X, KC_E, COMBO_END};
 const uint16_t PROGMEM combo_bracket_right[] =          {KC_I, KC_W, COMBO_END};
 const uint16_t PROGMEM combo_curly_bracket_left[] =     {KC_Y, KC_I, COMBO_END};
 const uint16_t PROGMEM combo_curly_bracket_right[] =    {KC_U, KC_X, COMBO_END};
+
+// One hand special
+const uint16_t PROGMEM combo_control_right[] =          {LT(_NUMERIC, KC_ENT), KC_C, COMBO_END};
+const uint16_t PROGMEM combo_control_shift_right[] =    {LT(_NUMERIC, KC_ENT), KC_S, COMBO_END};
+const uint16_t PROGMEM combo_shift_left[] =             {KC_LAPO, KC_W, COMBO_END};
+const uint16_t PROGMEM combo_del_left[] =               {KC_TAB, KC_O, COMBO_END};
 
 
 // --------------------------------------------------
@@ -221,4 +232,10 @@ combo_t key_combos[] = {
     [BRACKET_RIGHT] = COMBO(combo_bracket_right,                KC_RIGHT_BRACKET),
     [CURLY_BRACKET_LEFT] = COMBO(combo_curly_bracket_left,      KC_LEFT_CURLY_BRACE),
     [CURLY_BRACKET_RIGHT] = COMBO(combo_curly_bracket_right,    KC_RIGHT_CURLY_BRACE),
+
+    // One hand special
+    [CONTROL_RIGHT] = COMBO(combo_control_right,                KC_RCTL),
+    [CONTROL_SHIFT_RIGHT] = COMBO(combo_control_shift_right,    C(S(XXXXXXX))),
+    [SHIFT_LEFT] = COMBO(combo_shift_left,                      KC_RSFT),
+    [DEL_LEFT] = COMBO(combo_del_left,                          KC_BSPC),
 };
