@@ -17,27 +17,64 @@ void matrix_scan_user(void) {
       SEND_STRING("f@linguenheld.fr"); }
     SEQ_TWO_KEYS(KC_M, KC_L) {
       SEND_STRING("florent@linguenheld.fr"); }
+    SEQ_TWO_KEYS(KC_F, KC_L) {
+      SEND_STRING("FLinguenheld"); }
 
-
+    // Degree
     SEQ_THREE_KEYS(KC_D, KC_E, KC_G) {
       send_unicode_string("°"); }
+
+    // Copyright / Register
     SEQ_THREE_KEYS(KC_C, KC_O, KC_P) {
       send_unicode_string("©"); }
     SEQ_THREE_KEYS(KC_R, KC_E, KC_G) {
       send_unicode_string("®"); }
 
+    // Diameter
     SEQ_THREE_KEYS(KC_D, KC_I, KC_A) {
       send_unicode_string("ø"); }
     SEQ_FOUR_KEYS(KC_D, KC_I, KC_A, KC_M) {
       send_unicode_string("Ø"); }
 
+    // Currency
     SEQ_THREE_KEYS(KC_E, KC_U, KC_R) {
       send_unicode_string("€"); }
     SEQ_THREE_KEYS(KC_P, KC_O, KC_U) {
       send_unicode_string("£"); }
     SEQ_THREE_KEYS(KC_Y, KC_E, KC_N) {
       send_unicode_string("¥"); }
+    SEQ_THREE_KEYS(KC_C, KC_E, KC_N) {
+      send_unicode_string("¢"); }
 
+    // Fractions
+    SEQ_THREE_KEYS(KC_Q, KC_S, KC_T) {
+      send_unicode_string("¼"); }
+    SEQ_THREE_KEYS(KC_Q, KC_S, KC_G) {
+      send_unicode_string("½"); }
+    SEQ_THREE_KEYS(KC_H, KC_S, KC_T) {
+      send_unicode_string("¾"); }
+
+    // Maths
+    SEQ_THREE_KEYS(KC_M, KC_U, KC_L) {
+      send_unicode_string("×"); }
+    SEQ_THREE_KEYS(KC_D, KC_I, KC_V) {
+      send_unicode_string("÷"); }
+    SEQ_TWO_KEYS(KC_P, KC_M) {
+      send_unicode_string("±"); }
+    SEQ_THREE_KEYS(KC_I, KC_N, KC_E) {
+      send_unicode_string("≠"); }
+    SEQ_THREE_KEYS(KC_A, KC_L, KC_M) {
+      send_unicode_string("≈"); }
+    SEQ_THREE_KEYS(KC_S, KC_Q, KC_U) {
+      send_unicode_string("√"); }
+    SEQ_THREE_KEYS(KC_I, KC_N, KC_F) {
+      send_unicode_string("∞"); }
+    SEQ_TWO_KEYS(KC_LABK, KC_LABK) {
+      send_unicode_string("≤"); }
+    SEQ_TWO_KEYS(KC_RABK, KC_RABK) {
+      send_unicode_string("≥"); }
+
+    // Greek
     SEQ_TWO_KEYS(KC_P, KC_I) {
       send_unicode_string("π"); }
     SEQ_THREE_KEYS(KC_P, KC_I, KC_I) {
@@ -48,48 +85,72 @@ void matrix_scan_user(void) {
     SEQ_FOUR_KEYS(KC_O, KC_M, KC_E, KC_G) {
       send_unicode_string("Ω"); }
 
+    // Icons
+    SEQ_THREE_KEYS(KC_F, KC_L, KC_A) {
+      send_unicode_string("⚡"); }
+    SEQ_THREE_KEYS(KC_S, KC_P, KC_A) {
+      send_unicode_string("✨"); }
+    SEQ_THREE_KEYS(KC_O, KC_W, KC_D) {
+      send_unicode_string("⛔"); }
+    SEQ_THREE_KEYS(KC_C, KC_O, KC_F) {
+      send_unicode_string("☕"); }
+    SEQ_THREE_KEYS(KC_U, KC_M, KC_B) {
+      send_unicode_string("☔"); }
+    SEQ_THREE_KEYS(KC_Y, KC_E, KC_S) {
+      send_unicode_string("✅"); }
+    SEQ_TWO_KEYS(KC_N, KC_O) {
+      send_unicode_string("❎"); }
+    SEQ_THREE_KEYS(KC_C, KC_R, KC_O) {
+      send_unicode_string("❌"); }
+    SEQ_TWO_KEYS(KC_EXCLAIM, KC_EXCLAIM) {
+      send_unicode_string("❓"); }
+    SEQ_ONE_KEY(KC_EXCLAIM) {
+      send_unicode_string("❗"); }
+    SEQ_THREE_KEYS(KC_EXCLAIM, KC_EXCLAIM, KC_G) {
+      send_unicode_string("❔"); }
+    SEQ_TWO_KEYS(KC_EXCLAIM, KC_G) {
+      send_unicode_string("❕"); }
 
-
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_P, KC_C) {
+    // Subscript / superscript
+    SEQ_THREE_KEYS(KC_U, KC_P, KC_C) {
       send_unicode_string("⁰"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_B, KC_C) {
+    SEQ_THREE_KEYS(KC_D, KC_N, KC_C) {
       send_unicode_string("₀"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_P, KC_Q) {
+    SEQ_THREE_KEYS(KC_U, KC_P, KC_Q) {
       send_unicode_string("¹"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_B, KC_Q) {
+    SEQ_THREE_KEYS(KC_D, KC_N, KC_Q) {
       send_unicode_string("₁"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_P, KC_G) {
+    SEQ_THREE_KEYS(KC_U, KC_P, KC_G) {
       send_unicode_string("²"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_B, KC_G) {
+    SEQ_THREE_KEYS(KC_D, KC_N, KC_G) {
       send_unicode_string("₂"); }
-
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_P, KC_H) {
+    SEQ_THREE_KEYS(KC_U, KC_P, KC_H) {
       send_unicode_string("³"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_B, KC_H) {
+    SEQ_THREE_KEYS(KC_D, KC_N, KC_H) {
       send_unicode_string("₃"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_P, KC_T) {
+    SEQ_THREE_KEYS(KC_U, KC_P, KC_T) {
       send_unicode_string("⁴"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_B, KC_T) {
+    SEQ_THREE_KEYS(KC_D, KC_N, KC_T) {
       send_unicode_string("₄"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_P, KC_S) {
+    SEQ_THREE_KEYS(KC_U, KC_P, KC_S) {
       send_unicode_string("⁵"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_B, KC_S) {
+    SEQ_THREE_KEYS(KC_D, KC_N, KC_S) {
       send_unicode_string("₅"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_P, KC_R) {
+    SEQ_THREE_KEYS(KC_U, KC_P, KC_R) {
       send_unicode_string("⁶"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_B, KC_R) {
+    SEQ_THREE_KEYS(KC_D, KC_N, KC_R) {
       send_unicode_string("₆"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_P, KC_V) {
+    SEQ_THREE_KEYS(KC_U, KC_P, KC_V) {
       send_unicode_string("⁷"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_B, KC_V) {
+    SEQ_THREE_KEYS(KC_D, KC_N, KC_V) {
       send_unicode_string("₇"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_P, KC_D) {
+    SEQ_THREE_KEYS(KC_U, KC_P, KC_D) {
       send_unicode_string("⁸"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_B, KC_D) {
+    SEQ_THREE_KEYS(KC_D, KC_N, KC_D) {
       send_unicode_string("₈"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_P, KC_L) {
+    SEQ_THREE_KEYS(KC_U, KC_P, KC_L) {
       send_unicode_string("⁹"); }
-    SEQ_FOUR_KEYS(KC_S, KC_U, KC_B, KC_L) {
+    SEQ_THREE_KEYS(KC_D, KC_N, KC_L) {
       send_unicode_string("₉"); }
 
   }

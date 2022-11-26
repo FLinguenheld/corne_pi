@@ -83,18 +83,6 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
         case CS_AE:
         case CS_OE:
 
-        // --
-        case CS_SUPERSCRIPT_0:
-        case CS_SUPERSCRIPT_1:
-        case CS_SUPERSCRIPT_2:
-        case CS_SUPERSCRIPT_3:
-        case CS_SUPERSCRIPT_4:
-        case CS_SUPERSCRIPT_5:
-        case CS_SUPERSCRIPT_6:
-        case CS_SUPERSCRIPT_7:
-        case CS_SUPERSCRIPT_8:
-        case CS_SUPERSCRIPT_9:
-
             return true;
 
         default:
@@ -179,39 +167,6 @@ void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
         case CS_OE:
             if (shifted) { send_unicode_string("Œ"); }
             else         { send_unicode_string("œ"); } break;
-
-
-        // --
-        case CS_SUPERSCRIPT_0:
-            if (shifted) { send_unicode_string("₀"); }
-            else         { send_unicode_string("⁰"); }  break;
-        case CS_SUPERSCRIPT_1:
-            if (shifted) { send_unicode_string("₁"); }
-            else         { send_unicode_string("¹"); }  break;
-        case CS_SUPERSCRIPT_2:
-            if (shifted) { send_unicode_string("₂"); }
-            else         { send_unicode_string("²"); }  break;
-        case CS_SUPERSCRIPT_3:
-            if (shifted) { send_unicode_string("₃"); }
-            else         { send_unicode_string("³"); }  break;
-        case CS_SUPERSCRIPT_4:
-            if (shifted) { send_unicode_string("₄"); }
-            else         { send_unicode_string("⁴"); }  break;
-        case CS_SUPERSCRIPT_5:
-            if (shifted) { send_unicode_string("₅"); }
-            else         { send_unicode_string("⁵"); }  break;
-        case CS_SUPERSCRIPT_6:
-            if (shifted) { send_unicode_string("₆"); }
-            else         { send_unicode_string("⁶"); }  break;
-        case CS_SUPERSCRIPT_7:
-            if (shifted) { send_unicode_string("₇"); }
-            else         { send_unicode_string("⁷"); }  break;
-        case CS_SUPERSCRIPT_8:
-            if (shifted) { send_unicode_string("₈"); }
-            else         { send_unicode_string("⁸"); }  break;
-        case CS_SUPERSCRIPT_9:
-            if (shifted) { send_unicode_string("₉"); }
-            else         { send_unicode_string("⁹"); }  break;
 
 
         default:

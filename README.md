@@ -108,13 +108,43 @@ Use the standard us keymap :
 |   leader + E + U + R        |   €                    |
 |   leader + P + O + U        |   £                    |
 |   leader + Y + E + N        |   ¥                    |
+|   leader + C + E + N        |   ¢                    |
 |   leader + P + I            |   π                    |
 |   leader + P + I + I        |   Π                    |
 |   leader + O + M + E        |   ω                    |
 |   leader + O + M + E + G    |   Ω                    |
-|   leader + S + U + P + C    |   ⁰   (too complicated)|
-|   leader + S + U + B + C    |   ₀                    |
+|   leader + U + P + C        |   ⁰                    |
+|   leader + D + N + C        |   ₀                    |
 
+|   -                         |                        |
+|-----------------------------|------------------------|
+|   leader + M + U + L        |   ×                    |
+|   leader + D + I + V        |   ÷                    |
+|   leader + P + M            |   ±                    |
+|   leader + I + N + E        |   ≠                    |
+|   leader + A + L + M        |   ≈                    |
+|   leader + S + Q + U        |   √                    |
+|   leader + I + N + F        |   ∞                    |
+|   leader + < + <            |   ≤                    |
+|   leader + > + >            |   ≥                    |
+|   leader + Q + S + T        |   ¼                    |
+|   leader + Q + S + G        |   ½                    |
+|   leader + H + S + T        |   ¾                    |
+
+|   -                         |                        |
+|-----------------------------|------------------------|
+|   leader + F + L + A        |   ⚡                   |
+|   leader + S + P + A        |   ✨                   |
+|   leader + O + W + D        |   ⛔                   |
+|   leader + C + O + F        |   ☕                   |
+|   leader + U + M + B        |   ☔                   |
+|   leader + Y + E + S        |   ✅                   |
+|   leader + N + O            |   ❎                   |
+|   leader + C + R + O        |   ❌                   |
+|   leader + ! + !            |   ❓                   |
+|   leader + ! +              |   ❗                   |
+|   leader + ! + ! + G        |   ❔                   |
+|   leader + ! + G            |   ❕                   |
 
 #### Layouts
 
