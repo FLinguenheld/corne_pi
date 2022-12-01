@@ -43,7 +43,7 @@ enum combos {
     E_O,
 
     // --
-    ENTER_SHIFTED,
+    // ENTER_SHIFTED,
     CONTROL_SHIFT,
     CONTROL_ALT,
     CONTROL_SHIFT_ALT,
@@ -99,7 +99,7 @@ const uint16_t PROGMEM combo_fn[] =                     {LT(_NUMERIC, KC_ENT), K
 const uint16_t PROGMEM combo_fn_2[] =                   {LT(_NUMERIC, KC_ENT), KC_LCPO, COMBO_END};
 
 // --
-const uint16_t PROGMEM combo_enter_shifted[] =          {LT(_NUMERIC, KC_ENT), KC_S, COMBO_END};
+// const uint16_t PROGMEM combo_enter_shifted[] =          {LT(_NUMERIC, KC_ENT), KC_S, COMBO_END};
 const uint16_t PROGMEM combo_control_shift[] =          {KC_LCPO, KC_S, COMBO_END};
 const uint16_t PROGMEM combo_control_alt[] =            {KC_LCPO, KC_LALT, COMBO_END};
 const uint16_t PROGMEM combo_control_shift_alt[] =      {KC_LCPO, KC_S, KC_A, COMBO_END};
@@ -175,7 +175,7 @@ combo_t key_combos[] = {
     [LAYER_FN_2] = COMBO(combo_fn_2,                        OSL(_FN)),
 
     // --
-    [ENTER_SHIFTED] = COMBO(combo_enter_shifted,            S(KC_ENT)),
+    // [ENTER_SHIFTED] = COMBO(combo_enter_shifted,            S(KC_ENT)),
     [CONTROL_SHIFT] = COMBO(combo_control_shift,            C(S(XXXXXXX))),
     [CONTROL_ALT] = COMBO(combo_control_alt,                C(A(XXXXXXX))),
     [CONTROL_SHIFT_ALT] = COMBO(combo_control_shift_alt,    C(S(A(XXXXXXX)))),
