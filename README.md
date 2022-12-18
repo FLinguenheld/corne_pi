@@ -67,23 +67,7 @@ Use the standard us keymap :
 |------------------|------------------------|
 |   mouse + arrows |   adjust               |
 |   arrows + f     |   fn                   |
-|   q + s          |   ^                    |
-|   g + r          |   \`                   |
-|   h + s          |   #                    |
-|   a + e          |   &                    |
-|   i + e          |   \|                   |
-|   s + l          |   /                    |
-|   d + r          |   \                    |
-|   t + d          |   ~                    |
-|   s + r          |   _                    |
-|   t + r          |   -                    |
-|   p + u          |   +                    |
-|   e + u          |   =                    |
-|   p + e          |   %                    |
-|   s + t          |   *                    |
 |   enter + s      |   shifted enter        |
-|   d + l          |   $                    |
-|   a + i          |   @                    |
 
 |   Parenthesis    |                        |
 |------------------|------------------------|
@@ -154,3 +138,4 @@ Use the standard us keymap :
 ![arrows](https://raw.githubusercontent.com/FLinguenheld/corne_pie/main/images/arrows.png "layout")  
 ![adjust](https://raw.githubusercontent.com/FLinguenheld/corne_pie/main/images/adjust.png "layout")  
 ![fn](https://raw.githubusercontent.com/FLinguenheld/corne_pie/main/images/fn.png "layout")
+![combo](https://raw.githubusercontent.com/FLinguenheld/corne_pie/main/images/combos.png "layout")

@@ -131,21 +131,27 @@ const uint16_t PROGMEM combo_ea[] =                     {CS_E_ACUTE, KC_A, COMBO
 const uint16_t PROGMEM combo_eo[] =                     {CS_E_ACUTE, KC_O, COMBO_END};
 
 // --
-const uint16_t PROGMEM combo_ampersand[] =              {KC_A, KC_E, COMBO_END};
-const uint16_t PROGMEM combo_backslash[] =              {KC_D, KC_R, COMBO_END};
-const uint16_t PROGMEM combo_circumflex[] =             {KC_V, KC_D, COMBO_END}; // Keep ?
-const uint16_t PROGMEM combo_equal[] =                  {KC_E, KC_U, COMBO_END};
-const uint16_t PROGMEM combo_grave[] =                  {KC_G, KC_R, COMBO_END};
-const uint16_t PROGMEM combo_hash[] =                   {KC_H, KC_S, COMBO_END};
-const uint16_t PROGMEM combo_percent[] =                {KC_P, KC_E, COMBO_END};
-const uint16_t PROGMEM combo_pipe[] =                   {KC_I, KC_E, COMBO_END};
-const uint16_t PROGMEM combo_plus[] =                   {KC_P, KC_U, COMBO_END};
+const uint16_t PROGMEM combo_pipe[] =                   {KC_E, KC_I, COMBO_END};
+const uint16_t PROGMEM combo_ampersand[] =              {KC_U, KC_I, COMBO_END};
+const uint16_t PROGMEM combo_tilde[] =                  {KC_U, KC_E, COMBO_END};
+
 const uint16_t PROGMEM combo_slash[] =                  {KC_S, KC_L, COMBO_END};
-const uint16_t PROGMEM combo_star[] =                   {KC_S, KC_T, COMBO_END};
-const uint16_t PROGMEM combo_tilde[] =                  {KC_T, KC_D, COMBO_END};
-const uint16_t PROGMEM combo_tiret[] =                  {KC_T, KC_R, COMBO_END};
-const uint16_t PROGMEM combo_underscore[] =             {KC_S, KC_R, COMBO_END};
+const uint16_t PROGMEM combo_backslash[] =              {KC_D, KC_R, COMBO_END};
+
+const uint16_t PROGMEM combo_circumflex[] =             {KC_T, KC_D, COMBO_END};
 const uint16_t PROGMEM combo_dollar[] =                 {KC_D, KC_L, COMBO_END};
+
+const uint16_t PROGMEM combo_star[] =                   {KC_S, KC_T, COMBO_END};
+const uint16_t PROGMEM combo_underscore[] =             {KC_S, KC_R, COMBO_END};
+
+const uint16_t PROGMEM combo_hash[] =                   {KC_U, KC_P, COMBO_END};
+const uint16_t PROGMEM combo_percent[] =                {KC_P, KC_E, COMBO_END};
+
+const uint16_t PROGMEM combo_plus[] =                   {KC_T, KC_L, COMBO_END};
+const uint16_t PROGMEM combo_tiret[] =                  {KC_T, KC_R, COMBO_END};
+const uint16_t PROGMEM combo_equal[] =                  {KC_T, KC_H, COMBO_END};
+
+const uint16_t PROGMEM combo_grave[] =                  {KC_T, KC_G, COMBO_END};
 const uint16_t PROGMEM combo_at_sign[] =                {KC_A, KC_I, COMBO_END};
 
 // --
