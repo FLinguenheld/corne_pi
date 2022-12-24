@@ -20,7 +20,7 @@ Change the master in the config.h file :
 
 then :
 
-    qmk compile && qmk flash -e CONVERT_TO=promicro_rp2040
+    qmk compile && qmk flash
 
 and :
 

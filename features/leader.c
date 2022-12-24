@@ -247,10 +247,10 @@ void matrix_scan_user(void) {
 // ---------------------------------------------------------
 // ---------------------------------------------------------
 // Set a bool for the oled screen
-// void leader_start(void) {
-    // is_leader_active = true;
-// }
+void leader_start(void) {
+    is_leader_active = true;
+}
 
-// void leader_end(void) {
-    // is_leader_active = false;
-// }
+void leader_end(void) {
+    is_leader_active = false;
+}
