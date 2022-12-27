@@ -21,6 +21,7 @@ enum layers {
     _FN,
 };
 
+
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
 // Timer to shutdown oled screens
@@ -63,6 +64,7 @@ enum custom_keys {
     CS_Y_DIAERESIS,
 };
 
+
 // --
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
@@ -98,6 +100,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 #include "features/combo.c"
 #include "features/leader.c"
 #include "features/oled.c"
+#include "features/tap_dance.c"
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
 // Layouts ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -128,7 +131,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           KC_B       ,     KC_Y       ,     KC_X       ,     KC_W       ,         KC_Z          ,                 KC_K          ,      KC_Q      ,      KC_G      ,      KC_H      ,      KC_F      ,
   //|----------------+----------------+----------------+----------------+-----------------------|       |-----------------------+----------------+----------------+----------------+----------------|
   //                        |----------------------+----------------------+-----------------------|   |-----------------------+----------------------+----------------------|
-                                    KC_SCLN        , LT(_MOUSE, KC_COMM)  ,        KC_LCPO        ,      LT(_NUMERIC, KC_ENT) , LT(_ARROWS, KC_DOT)  ,     KC_COLN
+                                    // KC_SCLN        , LT(_MOUSE, KC_COMM)  ,        KC_LCPO        ,      LT(_NUMERIC, KC_ENT) , LT(_ARROWS, KC_DOT)  ,     KC_COLN
+                                    // TD(SEMICOLON_ALT)       , LT(_MOUSE, KC_COMM)  ,        KC_LCPO        ,      LT(_NUMERIC, KC_ENT) , LT(_ARROWS, KC_DOT)  ,     TD(COLON_SHIFT)
+                                    LALT_T(KC_SEMICOLON)       , LT(_MOUSE, KC_COMM)  ,        KC_LCPO        ,      LT(_NUMERIC, KC_ENT) , LT(_ARROWS, KC_DOT)  ,     TD(COLON_SHIFT)
   //                        |----------------------+----------------------+----/* Space ctl */----|   |-----------------------+----------------------+----------------------|
   ),
 
@@ -197,3 +202,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //                              |-------------------+-------------------+-----------------------|   |-----------------------+-------------------+-------------------|
   ),
 };
+
+
+

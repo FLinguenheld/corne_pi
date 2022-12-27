@@ -55,7 +55,6 @@ bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
     switch(keycode) {
 
         case KC_BSPC:
-        case KC_EXLM:
 
         // French
         case CS_E_ACUTE:
@@ -95,10 +94,6 @@ void autoshift_press_user(uint16_t keycode, bool shifted, keyrecord_t *record) {
 
         case KC_BSPC:
             register_code16((!shifted) ? KC_BSPC : KC_DEL);
-            break;
-
-        case KC_EXLM: // ! ?
-            register_code16((!shifted) ? KC_EXLM : KC_QUES);
             break;
 
         // French
@@ -184,11 +179,6 @@ void autoshift_release_user(uint16_t keycode, bool shifted, keyrecord_t *record)
         case KC_BSPC:
             unregister_code16((!shifted) ? KC_BSPC : KC_DEL);
             break;
-
-        case KC_EXLM:
-            unregister_code16((!shifted) ? KC_EXLM : KC_QUES);
-            break;
-
 
         default:
             // & 0xFF gets the Tap key for Tap Holds, required when using Retro Shift

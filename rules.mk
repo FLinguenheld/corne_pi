@@ -14,6 +14,8 @@ MOUSEKEY_ENABLE = yes
 AUTO_SHIFT_ENABLE = yes
 AUTO_SHIFT_MODIFIERS = no
 COMBO_ENABLE = yes
+TAP_DANCE_ENABLE = yes
+LEADER_ENABLE = yes
 
 # Recommended for space cadet shift
 COMMAND_ENABLE = no
@@ -21,29 +23,4 @@ COMMAND_ENABLE = no
 UNICODE_ENABLE = yes
 SEND_STRING_ENABLE = yes
 
-LEADER_ENABLE = yes
-
-# COMMAND_ENABLE = yes	# Active commands 
-
 RGBLIGHT_ENABLE = yes    # Enable WS2812 RGB underlight.
-
-
-# Reduce the size !
-# Extra keys allow to save 324 bytes
-# AUDIO_ENABLE = no
-# BACKLIGHT_ENABLE = no
-# BLUETOOTH_ENABLE = no
-# BOOTMAGIC_ENABLE = no
-# CONSOLE_ENABLE = no
-# EXTRAKEY_ENABLE = yes
-# FAUXCLICKY_ENABLE = no
-# HD44780_ENABLE = no
-# LINK_TIME_OPTIMIZATION_ENABLE = yes
-# MIDI_ENABLE = no
-# NKRO_ENABLE = no
-# SLEEP_LED_ENABLE = no
-# STENO_ENABLE = no
-# RGBLIGHT_ENABLE = no
-# RGB_MATRIX_ENABLE = no
-# TAP_DANCE_ENABLE = no
-# TERMINAL_ENABLE = no
