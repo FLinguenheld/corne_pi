@@ -99,8 +99,8 @@ uint16_t COMBO_LEN = COMBO_LENGTH;
 // --------------------------------------------------
 // --------------------------------------------------
 // Sequences fo keys
-const uint16_t PROGMEM combo_leader[] =                 {KC_SCLN, KC_COLN, COMBO_END};
-const uint16_t PROGMEM combo_bootloader[] =             {KC_Z, KC_EXLM, KC_LABK, KC_K, KC_C, KC_RABK, COMBO_END};
+const uint16_t PROGMEM combo_leader[] =                 {LALT_T(KC_SEMICOLON), TD(COLON_SHIFT), COMBO_END};
+const uint16_t PROGMEM combo_bootloader[] =             {KC_TAB, GUI_T(KC_ESC), KC_Z, KC_BSPC, KC_C, KC_K, COMBO_END};
 
 const uint16_t PROGMEM combo_adjust[] =                 {LT(_MOUSE, KC_COMM), LT(_ARROWS, KC_DOT), COMBO_END};
 const uint16_t PROGMEM combo_fn[] =                     {LT(_NUMERIC, KC_ENT), KC_F, COMBO_END};
