@@ -56,15 +56,23 @@ enum combos {
     CIRCUMFLEX,
     EQUAL,
 
+    QUOTE,
+    QUOTE_DOUBLE,
+    ANGLE_BRACKET_LEFT,
+    ANGLE_BRACKET_RIGHT,
+
+    EXCLAMATION_MARK,
+    QUESTION_MARK,
+
     GRAVE,
     HASH,
     PIPE,
     PERCENT,
+    MINUS,
     PLUS,
     SLASH,
     STAR,
     TILDE,
-    TIRET,              // Sorry Eliz but it's better than dash
     UNDERSCORE,
     DOLLAR,
     AT_SIGN,
@@ -148,11 +156,20 @@ const uint16_t PROGMEM combo_hash[] =                   {KC_U, KC_P, COMBO_END};
 const uint16_t PROGMEM combo_percent[] =                {KC_P, KC_E, COMBO_END};
 
 const uint16_t PROGMEM combo_plus[] =                   {KC_T, KC_L, COMBO_END};
-const uint16_t PROGMEM combo_tiret[] =                  {KC_T, KC_R, COMBO_END};
+const uint16_t PROGMEM combo_minus[] =                  {KC_T, KC_R, COMBO_END};
 const uint16_t PROGMEM combo_equal[] =                  {KC_T, KC_H, COMBO_END};
 
 const uint16_t PROGMEM combo_grave[] =                  {KC_T, KC_G, COMBO_END};
 const uint16_t PROGMEM combo_at_sign[] =                {KC_A, KC_I, COMBO_END};
+
+const uint16_t PROGMEM combo_quote[] =                  {KC_T, KC_N, COMBO_END};
+const uint16_t PROGMEM combo_quote_double[] =           {KC_E, KC_A, COMBO_END};
+
+const uint16_t PROGMEM combo_angle_bracket_left[] =     {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM combo_angle_bracket_right[] =    {KC_S, KC_V, COMBO_END};
+
+const uint16_t PROGMEM combo_exclamation_mark[] =       {KC_O, KC_P, COMBO_END};
+const uint16_t PROGMEM combo_question_mark[] =          {KC_V, KC_D, COMBO_END};
 
 // --
 const uint16_t PROGMEM combo_parenthesis_left[] =       {KC_Y, KC_E, COMBO_END};
@@ -208,12 +225,20 @@ combo_t key_combos[] = {
     [U_DIAERESIS] = COMBO(combo_u_diaeresis,                CS_U_DIAERESIS),
     [Y_DIAERESIS] = COMBO(combo_y_diaeresis,                CS_Y_DIAERESIS),
 
-    [C_CEDILLA] = COMBO(combo_c_cedilla,                    CS_C_CEDILLA),
-    [E_A] = COMBO(combo_ea,                                 CS_AE),
-    [E_O] = COMBO(combo_eo,                                 CS_OE),
+    [C_CEDILLA] = COMBO(combo_c_cedilla,                        CS_C_CEDILLA),
+    [E_A] = COMBO(combo_ea,                                     CS_AE),
+    [E_O] = COMBO(combo_eo,                                     CS_OE),
 
     // --
-    [AMPERSAND] = COMBO(combo_ampersand,                    KC_AMPR),
+    [AMPERSAND] = COMBO(combo_ampersand,                        KC_AMPR),
+
+    [QUOTE] = COMBO(combo_quote,                                KC_QUOTE),
+    [QUOTE_DOUBLE] = COMBO(combo_quote_double,                  KC_DOUBLE_QUOTE),
+
+    [ANGLE_BRACKET_LEFT] = COMBO(combo_angle_bracket_left,      KC_LABK),
+    [ANGLE_BRACKET_RIGHT] = COMBO(combo_angle_bracket_right,    KC_RABK),
+    [EXCLAMATION_MARK] = COMBO(combo_exclamation_mark,          KC_EXCLAIM),
+    [QUESTION_MARK] = COMBO(combo_question_mark,                KC_QUESTION),
 
     [BACKSLASH] = COMBO(combo_backslash,                    KC_BSLS),
     [CIRCUMFLEX] = COMBO(combo_circumflex,                  KC_CIRC),
@@ -222,11 +247,11 @@ combo_t key_combos[] = {
     [HASH] = COMBO(combo_hash,                              KC_HASH),
     [PERCENT] = COMBO(combo_percent,                        KC_PERC),
     [PIPE] = COMBO(combo_pipe,                              KC_PIPE),
+    [MINUS] = COMBO(combo_minus,                            KC_MINS),
     [PLUS] = COMBO(combo_plus,                              KC_PLUS),
     [SLASH] = COMBO(combo_slash,                            KC_SLSH),
     [STAR] = COMBO(combo_star,                              KC_ASTR),
     [TILDE] = COMBO(combo_tilde,                            KC_TILD),
-    [TIRET] = COMBO(combo_tiret,                            KC_MINS),
     [UNDERSCORE] = COMBO(combo_underscore,                  KC_UNDS),
     [DOLLAR] = COMBO(combo_dollar,                          KC_DLR),
     [AT_SIGN] = COMBO(combo_at_sign,                        KC_AT),
