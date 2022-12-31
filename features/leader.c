@@ -94,6 +94,8 @@ void matrix_scan_user(void) {
       send_unicode_string("✨"); }
     SEQ_THREE_KEYS(KC_P, KC_O, KC_P) {
       send_unicode_string("🎉"); }
+    SEQ_THREE_KEYS(KC_R, KC_E, KC_C) {
+      send_unicode_string("♻️"); }
     SEQ_THREE_KEYS(KC_L, KC_O, KC_V) {
       send_unicode_string("❤️"); }
     SEQ_THREE_KEYS(KC_F, KC_I, KC_R) {
