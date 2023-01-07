@@ -20,6 +20,12 @@ void matrix_scan_user(void) {
     SEQ_TWO_KEYS(KC_F, KC_L) {
       SEND_STRING("FLinguenheld"); }
 
+    SEQ_THREE_KEYS(KC_T, KC_E, KC_S) {
+      SEND_STRING("test01234"); }
+    SEQ_THREE_KEYS(KC_A, KC_D, KC_M) {
+      SEND_STRING("admin01234"); }
+
+
     // Degree
     SEQ_THREE_KEYS(KC_D, KC_E, KC_G) {
       send_unicode_string("°"); }
